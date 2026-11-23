@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"
+    <title>Halaman Awal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -16,18 +16,22 @@
         <a href="#">Kontak</a>
     </nav>
     <main>
-        <div class="kartu-profil">
-            <h2>Profil Siswa</h2>
-            <p>Selamat datang di halaman utama website saya.</p>
-        </div>
+        <section>
+            <article id="kotak-pesan" class="kartu-profil">
+                <h2>Profil Siswa</h2>
+                <p>Selamat datang di halaman utama website saya.</p>
 
+                <p id="pesanStatus">Sedang Memuat...</p>
+            </article>
+        </section>
     </main>
     <footer>
-        <p> Praktikum RPL 2026</p>
+        <p>Praktikum RPL 2026</p>
     </footer>
-
-    <script> 
+    <script>
         document.getElementById("judulUtama").innerText = "Selamat Datang Siswa";
+
+        document.getElementById("pesanStatus").innerText = "Data Berhasil Disimpan";
     </script>
 </body>
 </html>
