@@ -3,6 +3,11 @@
     background-color: lightgray;
     padding: 20px;
     border: 2px solid blue;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px auto;
 }
 
 #kotak-pesan {
@@ -10,4 +15,6 @@
     background-color: lightyellow;
     margin: 15px;
     border: 1px solid red;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
 }

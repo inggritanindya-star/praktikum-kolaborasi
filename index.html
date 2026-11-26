@@ -22,7 +22,14 @@
                 <p>Selamat datang di halaman utama website saya.</p>
 
                 <p id="pesanStatus">Sedang Memuat...</p>
-            </article>
+
+    <form id="formNama">
+        <label for="inputNama">Nama:</label>
+         <input type="text" id="inputNama" required>
+         <button type="submit">simpan</button>
+         </form>
+         </article>
+
         </section>
     </main>
     <footer>
@@ -32,6 +39,17 @@
         document.getElementById("judulUtama").innerText = "Selamat Datang Siswa";
 
         document.getElementById("pesanStatus").innerText = "Data Berhasil Disimpan";
+
+        document.getElementById("formNama").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const nama = document.getElementById("inputNama").value.trim();
+            if (nama === "") {
+                document.getElementById("pesanStatus").innerText = "nama tidak boleh kosong"
+                return;
+            }
+            document.getElementById("judulUtama").innerText = "Selamat Datang, " + nama;
+            document.getElementById("pesanStatus").innerText = "Data Berhasil Disimpan";
+        });
     </script>
 </body>
 </html>
