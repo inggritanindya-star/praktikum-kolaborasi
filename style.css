@@ -1,6 +1,21 @@
 .kartu-profil {
+ halaman-utama
 width: 300px;
  background-color: lightgray;
      padding: 20px;
      border: 2px solid blue;
 }
+
+    width: 300px;
+    background-color: lightgray;
+    padding: 20px;
+    border: 2px solid blue;
+}
+
+#kotak-pesan {
+    height: 150px;
+    background-color: lightyellow;
+    margin: 15px;
+    border: 1px solid red;
+}
+main
