@@ -3,20 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ halaman-utama
+    <title>halaman utama</title>
     <title>Halaman Awal</title>
+main
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1 id="judulUtama">Halaman Awal</h1>
-    </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Profil</a>
-        <a href="#">Kontak</a>
+
+     <header>
+        <h1 id="judulUtama">halaman awal</h1>
+     </header>                                                                      
+
+     <nav>
+        <a href="#">beranda</a>
+        <a href="#">tentang</a>
+        <a href="#">kontak</a>
     </nav>
+
     <main>
         <section>
+halaman-utama
+            <article id="kotakpesan"
+        class="kartu-profil">
+            <h2>profile siswa</h2>
+            <p>selamat datang di halaman-utama website saya.</p>
+        
+            <p id="pesanStatus">sedang memuat</p>
+            </article>
+            </section>
+            </main>
+
+    <footer>
+        <p>pratikum RPL 2026</p>
+    </footer>
+
+    <script>
+        document.getElementById("judulUtama").textContent = "Selamat Datang Siswa";
+
+        document.getElementByld("pesanStatus").innerText="data berhasil disimpan";
+       </script>
+
+    
+
+
+
+                                                           
+    
+
             <article id="kotak-pesan" class="kartu-profil">
                 <h2>Profil Siswa</h2>
                 <p>Selamat datang di halaman utama website saya.</p>
@@ -33,5 +67,6 @@
 
         document.getElementById("pesanStatus").innerText = "Data Berhasil Disimpan";
     </script>
+ main
 </body>
 </html>
